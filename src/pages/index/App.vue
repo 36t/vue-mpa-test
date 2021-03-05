@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Home</h1>
+    <h1>This is Index page</h1>
     <a href="/about.html">About</a>
   </div>
 </template>
