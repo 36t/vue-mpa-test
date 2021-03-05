@@ -1,0 +1,13 @@
+<template>
+  <div>
+    <h1>Home</h1>
+    <a href="/about.html">About</a>
+  </div>
+</template>
+
+<style lang="scss"></style>
+
+<script lang="ts">
+import { Vue } from "vue-property-decorator";
+export default class App extends Vue {}
+</script>
