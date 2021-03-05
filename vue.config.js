@@ -1,23 +1,24 @@
+const glob = require('glob')
+const titles = require('./src/pages/title.js')
+const pages = {}
+
+glob.sync('./src/pages/**/app.ts').forEach(path => {
+  const chunk = path.split('./src/pages/')[1].split('/app.ts')[0]
+  console.log(chunk)
+  pages[chunk] = {
+    entry: path,
+    template: 'public/index.html',
+    filename: `${chunk}.html`,
+    title: titles[chunk],
+    chunks: ['chunk-vendors', 'chunk-common', chunk]
+  }
+})
+
 module.exports = {
+  pages,
   devServer: {
     port: 3000,
     disableHostCheck: true,
     open: true
-  },
-  pages: {
-    about: {
-      entry: "./src/pages/about/app.ts",
-      template: "public/index.html",
-      filename: "about.html",
-      title: "About Page",
-      chunks: ["chunk-vendors", "chunk-common", "about"]
-    },
-    index: {
-      entry: "./src/pages/index/app.ts",
-      template: "public/index.html",
-      filename: "index.html",
-      title: "Index Page",
-      chunks: ["chunk-vendors", "chunk-common", "index"]
-    }
   }
 };
