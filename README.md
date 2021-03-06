@@ -1,8 +1,51 @@
 # vue-mpa-test
 
-## Project setup
+MPA（Multiple Page Application) test of Vue CLI project base.
+
+## Environment
+
 ```
-npm install
+$ node --version
+v14.15.1
+
+$ vue --version
+@vue/cli 4.5.11
+
+$ cat ~/.vuerc
+{
+  "useTaobaoRegistry": false,
+  "packageManager": "npm",
+  "presets": {
+    "mpa-test": {
+      "useConfigFiles": true,
+      "plugins": {
+        "@vue/cli-plugin-babel": {},
+        "@vue/cli-plugin-typescript": {
+          "classComponent": true,
+          "useTsWithBabel": true
+        },
+        "@vue/cli-plugin-eslint": {
+          "config": "prettier",
+          "lintOn": [
+            "save",
+            "commit"
+          ]
+        }
+      },
+      "vueVersion": "2",
+      "cssPreprocessor": "dart-sass"
+    }
+  }
+}
+```
+
+## Command
+
+
+### Project setup
+
+```
+npm ci
 ```
 
 ### Compiles and hot-reloads for development
