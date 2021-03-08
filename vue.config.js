@@ -1,5 +1,5 @@
 const glob = require('glob');
-const titles = require('./src/pages/title.js');
+const titles = require('./src/pages/title.config.js');
 const pages = {};
 
 glob.sync('./src/pages/**/app.ts').forEach(path => {
