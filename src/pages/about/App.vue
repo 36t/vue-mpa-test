@@ -1,5 +1,8 @@
 <template>
-  <h1>This is About page</h1>
+  <div>
+    <h1>This is About page</h1>
+    <a href="/index.html">Go to Index page</a>
+  </div>
 </template>
 
 <style lang="scss"></style>

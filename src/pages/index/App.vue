@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>This is Index page</h1>
-    <a href="/about.html">About</a>
+    <a href="/about.html">Go to About page</a>
   </div>
 </template>
 
