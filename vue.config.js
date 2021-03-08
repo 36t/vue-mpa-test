@@ -1,3 +1,4 @@
+/* eslint @typescript-eslint/no-var-requires: 0 */
 const glob = require('glob');
 const titles = require('./src/pages/title.config.js');
 const pages = {};
