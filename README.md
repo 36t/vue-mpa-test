@@ -336,4 +336,5 @@ dist
 
 ## 参考
 
+- [Configuration Reference \| Vue CLI](https://cli.vuejs.org/config/#pages)
 - [javascript \- multiple pages in Vue\.js CLI \- Stack Overflow](https://stackoverflow.com/questions/51692018/multiple-pages-in-vue-js-cli)
